@@ -13,15 +13,15 @@ func main() {
 		for {
 			systemSection, err := hardware.GetSystemSection()
 			if err != nil {
-				fmt.Fprintln(err)
+				fmt.Println(err)
 			}
 
 			diskSection, err := hardware.GetDiskSection()
 			if err != nil {
-				println(err)
+				fmt.Println(err)
 			}
 
-			cpuSection, err := hardware.GetCpuSection
+			cpuSection, err := hardware.GetCpuSection()
 			if err != nil {
 				fmt.Println(err)
 			}
